@@ -19,7 +19,7 @@ Delete the existing component (lines 5-24) and write your own component named ``
 You should now have the following component in `App.tsx`:
 
 ```javascript
-const YourComponentName: React.FC = () => {
+const App: React.FC = () => {
   return (
     <h1>My first React component</h1>
   );
