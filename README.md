@@ -213,3 +213,67 @@ Now, remove everything from the return statement of `App` except for the `<div>`
         </div>
       ))}
 ```
+
+# Final version
+You `App.tsx` should now look like this:
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import logo from './logo.svg';
+import './App.css';
+
+const persons: PersonProps[] = [
+  {
+    firstName: "Jens August",
+    lastName: "Olsen",
+    email: "jens@cæsar.no"
+  },
+  {
+    firstName: "Ole",
+    lastName: "Brum",
+    email: "ole@brum.no"
+  },
+  {
+    firstName: "Kaptein",
+    lastName: "Sabeltann",
+    email: "captain@kjuttaviga.no"
+  },
+];
+
+const App: React.FC = () => {
+  return (
+    <div>
+      {persons.map(p => (
+        <div key={p.email}>
+          <hr />
+          <Person
+            firstName={p.firstName}
+            lastName={p.lastName}
+            email={p.email}
+          />
+        </div>
+      )
+      )}
+    </div>
+  );
+}
+
+type PersonProps = {
+  firstName: string,
+  lastName: string,
+  email: string
+}
+
+const Person: React.FC<PersonProps> = props => {
+  return (
+    <div>
+      <h3>First name: {props.firstName}</h3>
+      <h3>Last name: {props.lastName}</h3>
+      <h3>email: {props.email}</h3>
+    </div>
+  );
+}
+
+export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
+```
