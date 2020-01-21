@@ -175,3 +175,41 @@ const App: React.FC = () => {
 }
 ```
 The `<hr />`-tags adds a dividing line between each Person.
+
+# Reduce duplication and make it dynamic
+
+To avoid repeating ourselves, we will create an array of persons that we will render, instead of explicitly typing a `<Person />` for every person we have.
+
+Start by adding this array of `PersonProps` above the `App`-component:
+```javascript
+const persons: PersonProps[] = [
+  {
+    firstName: "Jens August",
+    lastName: "Olsen",
+    email: "jens@cæsar.no"
+  },
+  {
+    firstName: "Ole",
+    lastName: "Brum",
+    email: "ole@brum.no"
+  },
+  {
+    firstName: "Kaptein",
+    lastName: "Sabeltann",
+    email: "captain@kjuttaviga.no"
+  }
+];
+```
+Now, remove everything from the return statement of `App` except for the `<div>` and `</div>`. We will now use a built in JavaScript-function for Arrays: map(). We will use this function as a loop for our array `persons` to dynamically display as many persons there are in the array. Add this code inside of the `<div>`-tags:
+```javascript
+{persons.map(p => (
+        <div key={p.email}>
+          <hr />
+          <Person
+            firstName={p.firstName}
+            lastName={p.lastName}
+            email={p.email}
+          />
+        </div>
+      ))}
+```
