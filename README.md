@@ -1,7 +1,7 @@
 # react-tutorial
 __DO NOT COPY-PASTE ALL THE CODE EXAMPLES. TYPE THEM IN MANUALLY IN ORDER TO GET THE FEEL OF WRITING REACT CODE INTO YOUR FINGERS__
  
-Make sure you've installed Node.js (and peferably Visual Studio Code).
+Make sure you've installed Node.js (and preferably Visual Studio Code).
 
 Open a terminal and write
 
