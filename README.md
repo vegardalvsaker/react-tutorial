@@ -54,7 +54,6 @@ Below the `App`-component, create a new component which returns three `<h3>`-tag
 Your `App.tsx` should now look something like this:
 ```javascript
 import React from 'react';
-import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -75,7 +74,6 @@ const Person: React.FC = () => {
 }
 
 export default App;
-ReactDOM.render(<App />, document.getElementById('root'));
 ```
 If you have saved your file, you will notice that were no changes in the browser. This is because `App` is the only component 
 which is rendered. Therefore, we will need to render `Person` from `App`'s return statement. Add as many `<Person/>`s as you want
@@ -218,7 +216,6 @@ Now, remove everything from the return statement of `App` except for the `<div>`
 You `App.tsx` should now look like this:
 ```javascript
 import React from 'react';
-import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -275,5 +272,4 @@ const Person: React.FC<PersonProps> = props => {
 }
 
 export default App;
-ReactDOM.render(<App />, document.getElementById('root'));
 ```
