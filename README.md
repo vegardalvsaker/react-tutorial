@@ -9,7 +9,7 @@ Open a terminal and write
 npx create-react-app tutorialapp --typescript
 ```
 
-The preceding code will create a react project in the folder ```tutorialapp```. When this is finished, run ```cd tutorialapp``` and run ```npm start```.
+The preceding command will create a react project in the folder ```tutorialapp```. This will download all the files required for a react project inside of the folder `tutorialapp/node_modules` and set up a few basic files to get you started. When this is finished, run ```cd tutorialapp``` and run ```npm start```.
 This will start the development server and render the changes in the browser as you save the files. 
 Open the folder ```tutorialapp``` in VS Code, open up ```App.tsx```  and change some of the text in white (line 12 and/or 20), save the file and see the changes in the browser at ```http://localhost:3000```.
 
