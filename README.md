@@ -122,7 +122,7 @@ _The reason for replacing the parenthesis with `props`, instead of putting them 
 
 You will now have a red line under the `Person`-components, this is because we are not passing the required props. We will fix this after the next step.
 
-Inside the return statement of `Person`, replace the hardcoded values with "First name: {props.firstName}" etc. In order to access an object's value inside of the return statement, you will need to wrap it in curly braces. To test this, try to write `props.firstname` without the curly braces
+Inside the return statement of `Person`, replace the hardcoded values with "First name: {props.firstName}" etc. In order to access an object's value inside of the return statement, you will need to wrap it in curly braces.
 
 Your `Person`-component should now look like this:
 ```javascript
