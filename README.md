@@ -139,3 +139,38 @@ const Person: React.FC<PersonProps> = props => {
 
 ```
 
+# Passing props to a component
+Hover over one of the `<Person />`-components with a red line under and read the text. It tells us that it is missing the properties `firstName`, `lastName` and `email`, so let's add them. Do the following and add unique values to all three `<Person/>`s:
+```javascript
+<Person
+        firstName="Jens August"
+        lastName="Olsen"
+        email="jens@cæsar.no" />
+```
+
+The `App`-component should now look something like this:
+```javascript
+const App: React.FC = () => {
+  return (
+    <div>
+      <hr />
+      <Person
+        firstName="Jens August"
+        lastName="Olsen"
+        email="jens@cæsar.no" />
+      <hr />
+      <Person
+        firstName="Ole"
+        lastName="Brum"
+        email="ole@brum.no" />
+      <hr />
+      <Person
+        firstName="Kaptein"
+        lastName="Sabeltann"
+        email="captain@kjuttaviga.no" />
+      <hr />
+    </div>
+  );
+}
+```
+The `<hr />`-tags adds a dividing line between each Person.
