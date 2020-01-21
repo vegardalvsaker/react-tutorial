@@ -15,7 +15,7 @@ Open the folder ```tutorialapp``` in VS Code, open up ```App.tsx``` inside the `
 
 # Writing your own functional component
 
-Delete the existing component (lines 6-24) and write your own component named ```App``` which returns a `<h1>` with the text 'My first React component'.
+Delete the existing component (lines 5-24) and write your own component named ```App``` which returns a `<h1>` with the text 'My first React component'.
 You should now have the following component in `App.tsx`:
 
 ```javascript
