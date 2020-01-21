@@ -27,7 +27,7 @@ const YourComponentName: React.FC = () => {
 ```
 
 ## Rendering several JSX-elements (html-tags)
-_When rendering more than one element, you need to render them inside a `<div>`-tag. A React component's return statement may not have several JSX-elements (HTML) in the same level.
+_When rendering more than one element, you need to render them inside a `<div>`-tag. A React component's return statement may not have several JSX-elements (HTML) in the first level.
 For example, this is __not__ valid:_
 ```javascript
 return(
