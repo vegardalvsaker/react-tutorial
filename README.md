@@ -213,7 +213,7 @@ Now, remove everything from the return statement of `App` except for the `<div>`
 ```
 
 # Final version
-You `App.tsx` should now look like this:
+Your `App.tsx` should now look like this:
 ```javascript
 import React from 'react';
 import logo from './logo.svg';
