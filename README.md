@@ -1,6 +1,7 @@
 # react-tutorial
-__DO NOT COPY-PASTE ALL THE CODE EXAMPLES. TYPE THEM IN MANUALLY IN ORDER TO GET THE FEEL OF WRITING REACT CODE INTO YOUR FINGERS__
- 
+
+## This is a small, beginner friendly tutorial for React using function components and TypeScript.
+
 Make sure you've installed Node.js (and preferably Visual Studio Code).
 
 Open a terminal and write
