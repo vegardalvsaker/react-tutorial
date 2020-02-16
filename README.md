@@ -7,7 +7,7 @@ Make sure you've installed Node.js (and preferably Visual Studio Code).
 Open a terminal and write
 
 ```console 
-npx create-react-app tutorialapp --typescript
+npx create-react-app tutorialapp --template typescript
 ```
 
 The preceding command will create a react project in the folder ```tutorialapp```. This will download all the files required for a react project inside of the folder `tutorialapp/node_modules` and set up a few basic files to get you started. When this is finished, run ```cd tutorialapp``` and run ```npm start```.
